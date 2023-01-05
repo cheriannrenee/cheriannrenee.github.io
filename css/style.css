@@ -1,0 +1,378 @@
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
+* {
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 18px; /* Sets the font size to 16px */
+  font-weight: 500; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #101010;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.15em;
+  font-weight: 700;
+}
+
+
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-top: -8px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 0.15em;
+  font-weight: 500;
+}
+
+
+/*setting images to full-width*/
+img {
+  width: 100%;
+}
+
+/*change the default link color to your primary color (copied from your comments at the top of the document)*/
+a {
+  color: #3734DB;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #3734DB;
+  text-decoration: none; /* Underlining when hovering over a link */
+}
+
+/*style the current nav item green*/
+.active a {
+    color: #808080;
+}
+
+a:active { /* selected link */
+  color: #808080;
+}
+
+/*Pseudo classes for Accessibility for Across the Web*/
+a:hover,
+a:focus {
+  color: #101010;
+  text-decoration: underline;
+}
+
+
+/*CSS code for the button class*/
+.button {
+  display: inline-block;
+  background-color: #3734DB;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+/*
+.button:visited {
+  display: inline-block;
+  background-color: #3734DB;
+  color: #ffffff;
+}
+*/
+
+
+/*button rules for the mailto button*/
+.button.contact {
+  background-color: #3734DB;
+  color: #ffffff;
+  text-transform: none;
+  border: 2px solid #808080;
+  transition: 0.8s opacity;
+}
+
+/*button class hover and active state*/
+
+.button.contact:hover {
+  opacity: 0.8;
+  background-color: #101010;
+  color: #ffffff;
+}
+
+/*
+.button.contact:active {
+  opacity: 0.8;
+  background-color: green;
+  color: #ffffff;
+}
+*/
+
+.icon {
+  max-width: 25px;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*stye the page sections*/
+
+/*style the <header> element*/
+header {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/*style the logo*/
+header .logo {
+  max-width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Navigation Styling*/
+/*
+nav {
+  display: inline-block;
+}
+*/
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav {
+  width: auto;
+  float: right;
+}
+
+/*for the hamburger menu*/
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  background-color: #f2f2f2;
+  margin-top: 25px;
+  margin-bottom: -51%;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(58,14,218,1);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero span {
+  display: block;
+}
+
+#contact {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 20px; }
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*SVG animation*/
+/.svg-animation {
+  width: 100%;
+  max-width: 100%
+  height: auto;
+}
+
+@keyframes airplane-move {
+  from {transform: translate(0,70);}
+  to {transform: translate(350px,-35px);}
+}
+
+.airplane {
+  animation-duration: 5.5s;
+  animation-name: airplane-move;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  animation-timing-function: linear;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*Media Queries*/
+
+/*clear page flow*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*float all columns left*/
+[class*="col-"] {
+  padding: 10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  header .logo {
+    max-width: 100px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    float: left;
+    padding-bottom: 40px;
+  }
+
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+    padding-bottom: 40px;
+  }
+  .col-lg-8 {
+    width: 40%;
+    float: right;
+  }
+
+   #about-page .col-md-6 {
+     width: 100%;
+  }
+}
+
+/* =============================Gradient background================================= */
+#hero {
+	background: linear-gradient(-45deg, #325CFA61, #528DFF52, #6752ff52);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
