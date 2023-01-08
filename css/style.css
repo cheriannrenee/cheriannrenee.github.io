@@ -64,11 +64,11 @@ a:hover {
 
 /*style the current nav item green*/
 .active a {
-    color: #808080;
+    color: #36454F;
 }
 
 a:active { /* selected link */
-  color: #808080;
+  color: #36454F;
 }
 
 /*Pseudo classes for Accessibility for Across the Web*/
@@ -114,7 +114,7 @@ a:focus {
   background-color: #3734DB;
   color: #ffffff;
   text-transform: none;
-  border: 2px solid #808080;
+  border: 2px solid #36454F;
   transition: 0.8s opacity;
 }
 
