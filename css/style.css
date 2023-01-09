@@ -11,10 +11,10 @@
 
 body {
   background-color: #ffffff;
-  font-family: 'Proxima Nova', sans-serif;
-  font-size: 18px; /* Sets the font size to 16px */
-  font-weight: 500; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-family: 'helvetica neue';
+  font-size: 10px; /* Sets the font size to 16px */
+  font-weight: 400; /* Sets the font weight to 300 */
+  line-height: 1.25; /* Sets the line-height to 1.6 * the font-size */
   color: #101010;
 }
 
@@ -23,19 +23,18 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.15em;
-  font-weight: 700;
+  font-size: 1.75em;
+  font-weight: 900;
 }
 
 
-
 h2 {
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1m;
   font-weight: 500;
   margin-top: -8px;
 }
@@ -54,7 +53,7 @@ img {
 /*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
   color: #3734DB;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #3734DB;
@@ -86,14 +85,13 @@ a:focus {
   font-weight: 500;
   text-decoration: none;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
-  color: white;
   color: white;
 }
 
@@ -137,7 +135,7 @@ a:focus {
 */
 
 .icon {
-  max-width: 25px;
+  max-width: 35px;
 }
 
 /*--------------------------------------------End Section---------------------------------------------*/
@@ -176,7 +174,7 @@ nav > ul {
 
 nav > ul > li > a {
   padding: 0 15px;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
   color: #4a4a4a;
 }
@@ -263,11 +261,11 @@ nav {
 
 @keyframes airplane-move {
   from {transform: translate(0,70);}
-  to {transform: translate(350px,-35px);}
+  to {transform: translate(180px,-35px);}
 }
 
 .airplane {
-  animation-duration: 5.5s;
+  animation-duration: 2.25s;
   animation-name: airplane-move;
   animation-iteration-count: infinite;
   animation-direction: linear;
@@ -378,3 +376,19 @@ Large devices (1024px or larger)
 		background-position: 0% 50%;
 	}
 }
+
+/* =============================Profile pic================================= */
+
+.user {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.left {
+    float: left; padding: 0 20px 20px 0;}
