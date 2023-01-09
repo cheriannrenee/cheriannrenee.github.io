@@ -38,7 +38,6 @@ h3 {
   font-size: 1.25em;
   font-weight: 500;
   margin-top: -8px;
-  text-align: center;
 }
 
 h4 {
@@ -55,11 +54,11 @@ img {
 /*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
   color: #3734DB;
-  text-decoration: none; /* No underlining */
+  text-decoration: underline;
 }
 a:hover {
   color: #3734DB;
-  text-decoration: none; /* Underlining when hovering over a link */
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 /*style the current nav item green*/
@@ -93,6 +92,9 @@ a:focus {
 
 .button:hover {
   opacity: 0.8;
+  text-decoration: none;
+  color: white;
+  color: white;
 }
 
 .button:active {
@@ -360,7 +362,7 @@ Large devices (1024px or larger)
 
 /* =============================Gradient background================================= */
 #hero {
-	background: linear-gradient(-45deg, #325CFA61, #528DFF52, #6752ff52);
+	background: linear-gradient(-45deg, #f2c2e7, #dbd0fb, #c7ddff, #bfe7fb);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 }
