@@ -18,7 +18,7 @@ body {
   color: #101010;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4 h5{
   line-height: 1.4;
 }
 
@@ -42,6 +42,11 @@ h3 {
 h4 {
   font-size: 0.9em;
   font-weight: 500;
+}
+
+h5 {
+  font-size: 3.5em;
+  font-weight: 900;
 }
 
 
@@ -302,7 +307,7 @@ Medium devices (640px and larger)
   }
 
   header .logo {
-    max-width: 100px;
+    max-width: 80px;
   }
 
   nav > ul > li {
@@ -362,7 +367,7 @@ Large devices (1024px or larger)
 #hero {
 	background: linear-gradient(-45deg, #f2c2e7, #dbd0fb, #c7ddff, #bfe7fb);
 	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+	animation: gradient 8s ease infinite;
 }
 
 @keyframes gradient {
@@ -391,3 +396,12 @@ Large devices (1024px or larger)
 }
 
 /* =============================Back to top button================================= */
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
