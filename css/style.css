@@ -394,12 +394,4 @@ Large devices (1024px or larger)
 }
 
 /* =============================Back to top button================================= */
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 33.33%;
-  padding: 5px;
-}
+=
