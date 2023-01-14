@@ -11,7 +11,7 @@
 
 body {
   background-color: #ffffff;
-  font-family: 'helvetica neue';
+  font-family: 'Jost';
   font-size: 10px; /* Sets the font size to 16px */
   font-weight: 400; /* Sets the font weight to 300 */
   line-height: 1.25; /* Sets the line-height to 1.6 * the font-size */
@@ -210,15 +210,13 @@ nav {
 }
 
 .navtoggle.responsive nav {
-  background-color: #f2f2f2;
   margin-top: 25px;
   margin-bottom: -51%;
 }
 
 .navtoggle.responsive li  {
   display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(58,14,218,1);
+  padding: 10px 0;;
 }
 
 .navtoggle.responsive li:last-child  {
