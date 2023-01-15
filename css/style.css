@@ -12,7 +12,7 @@
 body {
   background-color: #ffffff;
   font-family: 'Jost';
-  font-size: 10px; /* Sets the font size to 16px */
+  font-size: 14px; /* Sets the font size to 16px */
   font-weight: 400; /* Sets the font weight to 300 */
   line-height: 1.25; /* Sets the line-height to 1.6 * the font-size */
   color: #101010;
@@ -36,7 +36,7 @@ h2 {
 h3 {
   font-size: 1m;
   font-weight: 500;
-    margin-top: -5%;
+  margin-top: -5%;
 }
 
 h4 {
